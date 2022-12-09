@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find adc_us)/launch/adc_sim_env.launch">
+  </include>
+
+  <include file="$(find adc_us)/launch/amcl_localization.launch">
+  </include>
+
+  <include file="$(find adc_us)/launch/adc_navigation.launch">
+  </include>
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find adc_us)/rviz/config_rviz.rviz" />
+
+
+</launch>
