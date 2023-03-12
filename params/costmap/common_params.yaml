@@ -1,3 +1,5 @@
+obstacle_range: 5
+raytrace_range: 10
 # footprint parameters
 footprint: [[0.5,0.15],[0.5,-0.15],[-0.15,-0.15],[-0.15,0.15]] 
 #robot_radius: 0.35
@@ -41,5 +43,5 @@ obstacle_layer:
 inflation_layer:
   enabled: true
   inflate_unknown: false
-  cost_scaling_factor:  2.0
-  inflation_radius:     0.8
+  cost_scaling_factor:  0.5
+  inflation_radius:     0.5
