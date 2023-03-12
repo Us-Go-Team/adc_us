@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<arg name="launch_path" default="$(find adc_us)/launch"/>
+
+    <include file="$(arg launch_path)/adc_sim_env.launch"/>
+    <include file="$(arg launch_path)/amcl_localization.launch"/>
+    <include file="$(arg launch_path)/adc_navigation.launch"/>
+
+    <node name="rviz_window"   pkg="rviz"    type="rviz"    args="-d $(find adc_us)/rviz/config_file.rviz"/>
+
+</launch>

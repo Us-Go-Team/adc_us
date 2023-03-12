@@ -41,7 +41,7 @@
       <remap from="/map"    to="$(arg map_topic)" />
       <remap from="cmd_vel" to="$(arg cmd_vel_topic)" />
       <remap from="odom"    to="$(arg odom_topic)" />
-      <remap from="move_base_simple/goal"    to="$(arg move_base_name)_simple/goal" />
+      <remap from="$(arg move_base_name)_simple/goal"    to="/$(arg move_base_name)_simple/goal" />
       <remap from="move_base"    to="$(arg move_base_name)" />
 
       <rosparam file="$(arg path)/$(arg move_base_params)"                                  command="load" />

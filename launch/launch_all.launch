@@ -10,7 +10,7 @@
   <include file="$(find adc_us)/launch/adc_navigation.launch">
   </include>
 
-  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find adc_us)/rviz/config_rviz.rviz" />
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find adc_us)/rviz/config_file.rviz" />
 
 
 </launch>
